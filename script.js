@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const apiRoot = 'https://rest-api-task-application.herokuapp.com/v1/';
+  const apiRoot = 'https://rest-api-task-application.herokuapp.com/v1/tasks';
   const trelloApiRoot = 'https://rest-api-task-application.herokuapp.com/v1/trello';
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
@@ -63,7 +63,7 @@ $(document).ready(function() {
   }
 
   function getAllTasks() {
-    const requestUrl = apiRoot + '/tasks';
+    const requestUrl = apiRoot;
 
     $.ajax({
       url: requestUrl,
@@ -125,7 +125,7 @@ $(document).ready(function() {
     var taskTitle = $(this).find('[name="title"]').val();
     var taskContent = $(this).find('[name="content"]').val();
 
-    var requestUrl = apiRoot + '/tasks';
+    var requestUrl = apiRoot;
 
     $.ajax({
       url: requestUrl,
