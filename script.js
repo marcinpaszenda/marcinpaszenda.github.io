@@ -63,7 +63,7 @@ $(document).ready(function() {
   }
 
   function getAllTasks() {
-    const requestUrl = apiRoot;
+    const requestUrl = apiRoot + '/tasks';
 
     $.ajax({
       url: requestUrl,
@@ -108,7 +108,7 @@ $(document).ready(function() {
   function handleTaskDeleteRequest() {
     var parentEl = $(this).parents('[data-task-id]');
     var taskId = parentEl.attr('data-task-id');
-    var requestUrl = apiRoot;
+    var requestUrl = apiRoot + '/tasks';
 
     $.ajax({
       url: requestUrl + '/' + taskId,
@@ -125,7 +125,7 @@ $(document).ready(function() {
     var taskTitle = $(this).find('[name="title"]').val();
     var taskContent = $(this).find('[name="content"]').val();
 
-    var requestUrl = apiRoot;
+    var requestUrl = apiRoot + 'tasks';
 
     $.ajax({
       url: requestUrl,
