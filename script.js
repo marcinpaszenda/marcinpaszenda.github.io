@@ -2,7 +2,8 @@ $(document).ready(function() {
   // const apiRoot = 'https://rest-api-task-application.herokuapp.com/v1/tasks';
   // const trelloApiRoot = 'https://rest-api-task-application.herokuapp.com/v1/trello';
   const apiRoot = 'http://localhost:8080/v1/tasks';
-  const trelloApiRoot = 'https://api.trello.com/1';
+  const trelloApiRoot = 'http://localhost:8080/v1/trello';
+
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
 
