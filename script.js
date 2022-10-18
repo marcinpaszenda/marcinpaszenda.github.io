@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const apiRoot = 'https://rest-api-task-application.herokuapp.com/v1/tasks/';
+  const apiRoot = 'https://rest-api-task-application.herokuapp.com/v1/tasks';
   const trelloApiRoot = 'https://rest-api-task-application.herokuapp.com/v1/trello';
   // const apiRoot = 'http://localhost:8080/v1/tasks';
   // const trelloApiRoot = 'http://localhost:8080/v1/trello';
